@@ -17,6 +17,7 @@ body {
   --color-footer: #2f303a;
   --color-icon:#AFB1B8;
   --background-icon: rgba(255, 255, 255, 0.1);
+  --timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* обнуляем стили*/
@@ -131,9 +132,7 @@ border-bottom: 1px solid #ECECEC;
   margin-right: 30px;
 }
 
-/* .first-section-item {
-  flex: 1 1 270px;
-} */
+
 /*-Закончили позийионирование секцию чем мы занимаемся -*/
 
 .first-text {
@@ -179,11 +178,49 @@ border-bottom: 1px solid #ECECEC;
 .work {
   line-height: 1.2;
 }
+/* стилизируем чем мы зпнимаемся*/
 .activity {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
 }
+
+
+.text-position{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--color-white);
+}
+
+.text-position {
+  position: absolute;
+  display: flex;
+  bottom: 27px;
+  right: 85px;
+}
+
+.img-position{
+  position: relative;
+}
+
+.img-position::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 70px;
+  width: 100%;
+  bottom: 0%;
+  background-color:rgba(47, 48, 58, 0.8);
+
+}
+
+
+/*Закончили стилизировать чем мы зпнимаемся*/
+
 
 .team-item {
 
@@ -277,18 +314,43 @@ address {
 
 /* навигация */
 .list-link {
-  font-family: Roboto;
+ 
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--color-main);
+
+  position: relative;
 }
+
 .list-link:hover,
 .list-link:focus {
   color: var(--color-accent);
 }
+
+  .list-link.animation-heder::after {
+  content:'';
+  display:block;
+
+  position: absolute;
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color:currentColor;
+  left: 0px;
+  bottom: -34px;
+  opacity: 0;
+  transition:opacity 250ms var(--timing-function);
+
+} 
+ 
+.animation-heder:hover::after {
+opacity: 1;
+} 
 /* конец позиционирования */
 
 /* ховер и фокус силлка и лого*/
