@@ -88,7 +88,17 @@
 
     <section class="first-section">
         <h1 class="text-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button">Заказать услугу</button>
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
+
+        <div class="is-hidden backdrop" data-modal>
+            <div class="modal">
+
+                <button class="modal-logo" data-modal-close> <svg class="logo-krest" width="17px" height="17px">
+                        <use href="./images/modals-logo.svg#icon-Vector"></use>
+                    </svg> </button>
+
+            </div>
+        </div>
     </section>
 
 
@@ -157,9 +167,6 @@
 
             <ul class="reset-point activity ">
 
-                <!-- <div class="bg-bifor">
-
-                </div> -->
                 <!--Ставим текст по верх картинки -->
                 <li class="first-title-foto">
                     <div class="img-position">

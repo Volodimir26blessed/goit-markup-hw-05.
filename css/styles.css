@@ -218,6 +218,44 @@ border-bottom: 1px solid #ECECEC;
 
 }
 
+/* позиционируем  анимацию на ховере  */
+
+.text-cubmenu{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(33, 150, 243, 0.9);
+  
+  height: 296px;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  color:var(--color-white);
+
+  transform: translateY(101%);
+
+  transition: transform 250ms linear;
+}
+
+.submenu{
+  position: relative;
+  overflow:hidden;
+}
+
+.container-cards:hover .text-cubmenu {
+  transform: translateY(0);
+
+}
+
+
+
+
+
+/* позиционируем  анимацию на ховере  */
+
 
 /*Закончили стилизировать чем мы зпнимаемся*/
 
@@ -257,6 +295,8 @@ border-bottom: 1px solid #ECECEC;
 .establishment-cards-wrap {
   padding: 20px 24px;
 }
+
+
 
 .container-cards {
   background: #ffffff;
@@ -447,6 +487,57 @@ opacity: 1;
 button {
   cursor: pointer;
 } 
+/* модальное окно  */
+
+.backdrop{
+
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  height: 581px;
+  width: 528px;
+  background:var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius:4px;
+  
+}
+
+.modal-logo{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-left: 92%;
+    margin-top: 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* коонец модального окна */
 
 .btn { 
   font-style: normal;
@@ -478,6 +569,7 @@ button {
 
 /* карточки товара */
 .card {
+  
   cursor: pointer;
 }
 
