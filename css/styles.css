@@ -517,7 +517,6 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   border-radius:4px;
   
 }
@@ -746,6 +745,8 @@ border-radius: 50%;
 
   width: 170px;
   height: 92px;
+
+  color: var(--color-icon);
 }
 
 .imeges-claints-logo{
@@ -754,21 +755,15 @@ border-radius: 50%;
 }
 
 .imeges-claints-logo{
-  fill: var(--color-icon);
+  fill:currentColor
+  ;
 }
 
 .klaints-logo:hover,
 .klaints-logo:focus{
   border-color: var(--color-accent);
-  fill: var(--color-accent);
+  color: var(--color-accent);
 }
-
-
-.imeges-claints-logo:hover, 
-.imeges-claints-logo:focus {
-  fill: var(--color-accent);
-}
-
 
 
 .lists-klaints:not(:last-child) {
