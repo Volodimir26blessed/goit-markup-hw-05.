@@ -521,11 +521,38 @@
 
             </div>
 
+            <div class="footer-box-third">
+                <p class="paragraph-footer-too">Подпишитесь на рассылку</p>
+
+                <form class="js-speactr-form">
+                    <label>
+                        <input type="text" name="username" />
+
+                    </label>
+
+
+
+                </form>
+
+            </div>
+
         </div>
 
     </footer>
 
     <script src="./js/modal.js"></script>
+
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speactr-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+                    new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`), );
+                });
+
+        })();
+    </script>
 
 </body>
 

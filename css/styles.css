@@ -801,7 +801,15 @@ cursor: pointer;
 color:var(--color-white);
 } 
 
+.paragraph-footer-too{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: #FFFFFF;
+}
 .footer-box-last{
   padding: 0px 0px 0px 70px;
 }
