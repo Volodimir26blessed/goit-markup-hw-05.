@@ -550,6 +550,86 @@ button {
     box-sizing: border-box;
 }
 
+.form-position{
+  margin-left: 0px;
+  margin-left: 0px;
+  padding:30px 40px 164px 40px;
+}
+
+.form-text-header{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--color-main);
+  padding-bottom: 30px;
+}
+
+.form-field{
+display: flex;
+flex-direction: column;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+margin-bottom: 28px;
+text-align:left;
+}
+
+.form-field{
+  margin: 0px;
+  border:none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-label{
+padding:4px;
+
+}
+
+.form-input{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding:14px;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+
+}
+
+.form-text-bottom{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:var(--second-color);
+}
+
+.button-form{
+  height: 50px;
+  width: 200px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+
+  color:var(--color-white);
+  border: none;
+}
+
+.button-form:hover
+.button-form:focus{
+  color: #ce1e53;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: 250ms var(--timing-function);
+}
+
+
 /* коонец модального окна */
 
 .btn { 
@@ -852,17 +932,23 @@ color:var(--color-white);
 background-color: var(--color-accent);
 transition: 250ms var(--timing-function) ;
 }
-/* позиционирование оля для ввода емайл */
+
+
+/* позиционирование поля для ввода емайл */
+
+.footer-box-third{
+
+}
 .paragraph-footer-too{
   display: flex;
   cursor: pointer;
   padding-bottom: 20px;
-  margin-left: 154px;
+  margin-left: 93px;
 
 }
 
 .entry-field{
-  margin-left: 154px;
+  margin-left: 93px;
   height: 50px;
   width: 358px;
 
@@ -872,3 +958,15 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: #2f303a;
 }
+
+.button-submit{
+  height: 50px;
+  width: 200px;
+
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+ 
+}
+/* КОНЕЦ позиционирование поля для ввода емайл */
