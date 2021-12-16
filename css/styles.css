@@ -377,13 +377,13 @@ address {
 .list-link:hover,
 .list-link:focus {
   color: var(--color-accent);
-  /* transition: 250ms var(--timing-function); */
+  transition: 250ms var(--timing-function);
 }
 
-.animation-heder{
+/* 
+.list-link.animation-heder:focus{
    transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-}
+} */
 
 .list-link.animation-heder::after {
   content:'';
@@ -427,9 +427,11 @@ opacity: 1;
   color: var(--second-color);
   justify-content: center;
 }
-.mail:hover{
+.mail:hover,
+.mail:focus{
   color: var(--color-accent);
   transition: 250ms var(--timing-function);
+  
 }
 
 .tel {
@@ -438,12 +440,12 @@ opacity: 1;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-
   color: var(--second-color);
 }
-.tel:hover{
+.tel:hover,
+.tel:focus{
   color:var(--color-accent);
-  transition: 250ms var(--timing-function);
+   transition: 250ms var(--timing-function);
 }
 
 /* ховер и фокус силлка и лого end. */
@@ -516,12 +518,14 @@ button {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  opacity:1;
+  transition:250ms var(--timing-function)
 }
 
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
+  transition: 250ms var(--timing-function)
+  
 }
 
 .modal {
@@ -662,6 +666,7 @@ padding:4px;
   color:var(--color-white);
   border: none;
   margin-bottom: 40px;
+   transition: 2500ms var(--timing-function);
 }
 
 .button-form:hover,
@@ -672,6 +677,7 @@ padding:4px;
   border-radius: 4px;
   transition: 250ms var(--timing-function);
 }
+
 
 
 /* коонец модального окна */
@@ -695,7 +701,8 @@ padding:4px;
   
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: var(--color-white);
   background-color: var(--color-accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -783,7 +790,8 @@ padding:4px;
 
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--color-white);
   transition: 250ms var(--timing-function);
 }
@@ -798,15 +806,13 @@ align-items:center;
 }
 
 /*секция карточки товара */
-.name-progect {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-
-  letter-spacing: 0.06em;
-
-  color: var(--color-main);
+.name-progect { 
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 36px;
+ letter-spacing: 0.06em;
   cursor: pointer;
 }
 
@@ -968,11 +974,13 @@ color:var(--color-white);
   border-radius: 50%;
   fill:var(--color-white);
   background:var(--background-icon);
+  
 
   ;
 }
 
-.link-footer:hover {
+.link-footer:hover,
+.link-footer:focus {
 background-color: var(--color-accent);
 transition: 250ms var(--timing-function) ;
 }
@@ -986,7 +994,6 @@ transition: 250ms var(--timing-function) ;
   cursor: pointer;
   padding-bottom: 20px;
   margin-left: 93px;
-
 }
 
 .entry-field{
