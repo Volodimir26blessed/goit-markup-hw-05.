@@ -374,16 +374,17 @@ address {
   position: relative;
 }
 
+transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 .list-link:hover,
 .list-link:focus {
   color: var(--color-accent);
-  transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function); 
 }
 
-/* 
-.list-link.animation-heder:focus{
-   transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+  .active {
+ color: var(--color-accent);
+}
 
 .list-link.animation-heder::after {
   content:'';
@@ -395,16 +396,14 @@ address {
   height: 4px;
   border-radius: 2px;
 
-  background-color:currentColor;
+  background-color:var(--color-accent);
   left: 0px;
   bottom: -34px;
-  opacity: 0;
-  transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  
 } 
  
-.animation-heder:hover::after {
-opacity: 1;
-} 
 
 
 /* конец позиционирования */
@@ -807,13 +806,18 @@ align-items:center;
 
 /*секция карточки товара */
 .name-progect { 
- font-family: Roboto;
- font-style: normal;
- font-weight: bold;
- font-size: 18px;
- line-height: 36px;
- letter-spacing: 0.06em;
-  cursor: pointer;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 36px;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.06em;
+
+
+color: #212121;
+cursor: pointer;
 }
 
 .specification {
