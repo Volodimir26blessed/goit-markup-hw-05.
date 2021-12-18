@@ -372,38 +372,36 @@ address {
   color: var(--color-main);
 
   position: relative;
+  transition: 250ms var(--timing-function);
 }
 
-transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 .list-link:hover,
 .list-link:focus {
   color: var(--color-accent);
-  transition: 250ms var(--timing-function); 
 }
 
-  .active {
+.active{
  color: var(--color-accent);
+ position: relative;
 }
+.active::after{
+ content:'';
+ display:block;
 
-.list-link.animation-heder::after {
-  content:'';
-  display:block;
+ position: absolute;
 
-  position: absolute;
+ width: 100%;
+ height: 4px;
+ border-radius: 2px;
 
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
+ background-color:var(--color-accent);
+ left: 0px;
+ bottom: -34px;
 
-  background-color:var(--color-accent);
-  left: 0px;
-  bottom: -34px;
-  
-  transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  
-} 
- 
+ }
+
 
 
 /* конец позиционирования */
@@ -425,11 +423,12 @@ transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--second-color);
   justify-content: center;
+  transition: 250ms var(--timing-function);
 }
 .mail:hover,
 .mail:focus{
   color: var(--color-accent);
-  transition: 250ms var(--timing-function);
+  
   
 }
 
@@ -440,11 +439,12 @@ transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--second-color);
+  transition: 250ms var(--timing-function);
 }
 .tel:hover,
 .tel:focus{
   color:var(--color-accent);
-   transition: 250ms var(--timing-function);
+   
 }
 
 /* ховер и фокус силлка и лого end. */
@@ -697,6 +697,7 @@ padding:4px;
   padding: 6px 22px;
   border: none;
   justify-content: space-around;
+  transition: 250ms var(--timing-function);
   
 }
 
@@ -708,7 +709,7 @@ padding:4px;
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
-    transition: 250ms var(--timing-function);
+    
 }
 
 /* карточки товара */
@@ -788,11 +789,14 @@ padding:4px;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+
+  transition: 250ms var(--timing-function);
 }
+
 .footer-link:hover,
 .footer-link:focus {
   color: var(--color-white);
-  transition: 250ms var(--timing-function);
+  
 }
 
 .footer-item:not(:last-child) {
@@ -901,6 +905,7 @@ border-radius: 50%;
   height: 92px;
 
   color: var(--color-icon);
+  transition: 250ms var(--timing-function);
 }
 
 .imeges-claints-logo{
@@ -916,7 +921,7 @@ border-radius: 50%;
 .klaints-logo:focus {
   border-color: var(--color-accent);
   color: var(--color-accent);
-  transition: 250ms var(--timing-function);
+  
 }
 
 .lists-klaints:not(:last-child) {
@@ -978,15 +983,13 @@ color:var(--color-white);
   border-radius: 50%;
   fill:var(--color-white);
   background:var(--background-icon);
-  
-
-  ;
+  transition: 250ms var(--timing-function);
 }
 
 .link-footer:hover,
 .link-footer:focus {
 background-color: var(--color-accent);
-transition: 250ms var(--timing-function) ;
+
 }
 
 
