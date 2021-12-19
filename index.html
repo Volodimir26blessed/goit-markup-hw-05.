@@ -91,7 +91,10 @@
 
     <section class="first-section">
         <h1 class="text-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button" data-modal-open>Заказать услугу</button>
+
+        <div class="button-position">
+            <button class="button" type="button" data-modal-open>Заказать услугу</button>
+        </div>
 
         <div class="is-hidden backdrop" data-modal>
             <div class="modal">
@@ -106,27 +109,44 @@
                     <p class="form-text-header">Оставьте свои данные, мы вам перезвоним</p>
 
                     <diV class="form-field">
-                        <label class="form-label" for="name">Имя</label>
-                        <input class="form-input" tupe="text" name="name" id="name" placeholder="">
+                        <label class="form-text" for="name">Имя</label>
 
+                        <div class="input-wrap">
+                            <input class="form-input" type="text" name="name" id="name" required>
+                            <svg class="logo-register" width="12" height="12">
+                                <use href="./images/icons.svg#icon-person-black"></use>
+                            </svg>
 
+                        </div>
                     </diV>
 
 
-
                     <div class="form-field">
-                        <label class="form-label" for="tel">Телефон</label>
-                        <input class="form-input" tupe="tel" name="tel" id="tel">
+                        <label class="form-text" for="tel">Телефон</label>
+
+                        <div class="input-wrap">
+                            <input class="form-input" type="tel" name="tel" id="tel" required>
+                            <svg class="logo-register" width="13" height="13">
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                            </svg>
+
+                        </div>
                     </div>
 
+
+
                     <div class="form-field">
-                        <label class="form-label" for="mail">Почта</label>
-                        <input class="form-input" tupe="email" name="mail" id="mail">
+                        <label class="form-text" for="mail">Почта</label>
+
+                        <div class="input-wrap">
+                            <input class="form-input" type="email" name="mail" id="mail" required>
+                            <svg class="logo-register" width="15" height="12">
+                                <use href="./images/icons.svg#icon-email-black"></use>
+                            </svg>
+
+                        </div>
                     </div>
 
-                    <!-- <svg widht="12" height="12">
-                         <use href="./images/icons.svg#icon-email-black"></use>
-                     </svg> -->
 
 
                     <div class="form-field">
@@ -135,12 +155,17 @@
                             rows="4"></textarea>
                     </div>
 
-                    <p class="form-text-bottom">Соглашаюсь с рассылкой и принимаю <span
-                            class="text-modal-bottm-sp">Условия договора</span> </p>
 
 
+                    <div class="button-modal-too">
 
-                    <button class="button-form" type="submit">Отправить</button>
+                        <p class="form-text-bottom">Соглашаюсь с рассылкой и принимаю <span
+                                class="text-modal-bottm-sp">Условия
+                                договора</span> </p>
+
+                        <button class="button-form" type="submit">Отправить</button>
+
+                    </div>
 
                 </form>
 
@@ -575,12 +600,16 @@
                 <form class="js-speactr-form">
                     <label for="email" class="paragraph-footer-too">Подпишитесь на рассылку</label>
                     <input class="entry-field" type="email" name="username" id="email" placeholder="Email" />
+                    <button class="button-submit" type="submit">Подписаться </button>
 
                     <label>
-                        <button class="button-submit" type="submit">Подписаться <svg class="" width="24px"
-                                height="24px">
-                                <use href="./images/icons.svg#icon-icon-telegram"></use>
-                            </svg> </button>
+
+
+                        <svg class="telegram" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-icon-telegram"></use>
+                        </svg>
+
+
 
 
 
